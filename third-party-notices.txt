@@ -1,0 +1,39 @@
+SSVC Web 0.1.0 — Third-party notices
+
+SSVC source: MIT; see the repository LICENSE.
+
+Browser Media I/O 0.2.1 — MIT, copyright 2026 cityedge.
+Unmodified source and package: https://github.com/cityedge/browser-media-i-o/tree/86c32fb
+License: licenses/browser-media-io-MIT.txt
+Upstream dependency notices: licenses/browser-media-io-dependencies.txt
+The repository's web/vendor/browser-media-io-0.2.1.tgz includes the source.
+
+Mediabunny 1.61.0 and @mediabunny/aac-encoder 1.61.0 — MPL-2.0.
+Unmodified source: https://github.com/Vanilagy/mediabunny/tree/v1.61.0
+Versioned source packages: https://www.npmjs.com/package/mediabunny/v/1.61.0
+https://www.npmjs.com/package/@mediabunny/aac-encoder/v/1.61.0
+License: licenses/MPL-2.0.txt
+AAC fallback contains a WebAssembly build of FFmpeg's AAC encoder (libavcodec).
+Upstream source/build instructions: https://github.com/Vanilagy/mediabunny/tree/v1.61.0/packages/aac-encoder
+Build instructions included at licenses/aac-build-instructions.txt.
+FFmpeg source and licensing: https://ffmpeg.org/legal.html and https://github.com/FFmpeg/FFmpeg
+
+React 19.2.0, React DOM 19.2.0 and Scheduler — MIT, Meta Platforms, Inc. and affiliates.
+Source: https://github.com/facebook/react/tree/v19.2.0
+Licenses: licenses/react-MIT.txt, licenses/react-dom-MIT.txt, licenses/scheduler-MIT.txt
+
+Lucide React 0.468.0 — ISC, Lucide Contributors; Feather portions are MIT, Cole Bemis.
+Source: https://github.com/lucide-icons/lucide/tree/0.468.0
+License and full notices: licenses/lucide-ISC.txt
+
+Noto Sans JP, Noto Serif JP and BIZ UDGothic — SIL Open Font License 1.1.
+Downloaded on demand from Google Fonts; font binaries are not bundled.
+Source: https://github.com/google/fonts
+Licenses and copyright notices: licenses/Noto-Sans-JP-OFL.txt,
+licenses/Noto-Serif-JP-OFL.txt, licenses/BIZ-UDGothic-OFL.txt.
+Google Fonts are downloaded as needed via https://fonts.googleapis.com/.
+Browser standard generic families (serif, sans-serif, monospace) need no download.
+Installed PC fonts are accessed locally with browser permission and are not bundled.
+
+No media are bundled.
+The MP3 output module is not used. The upstream package's MP3/LAME notices apply to that separate module, not to an imported SSVC MP3 exporter.
