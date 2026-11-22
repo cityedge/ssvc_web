@@ -1,4 +1,4 @@
-# SSVC Web 1.1.0
+# SSVC Web 1.1.1
 
 バージョン付きZIPはロールバック用に保管してください。新しい公開版へ更新するときは別のバージョンとして保管し、以前のZIPを上書きしないでください。
 
@@ -32,6 +32,8 @@ GitHub公式: [ユーザーサイトの作成](https://docs.github.com/en/pages/
 
 背景画像と音源を選び、必要に応じてSRT字幕やスペアナ動画を開きます。見た目と出力設定を調整し、「MP4を書き出す」で保存します。スライドショーや最大2枚のアイコン画像にも対応します。日英表示を切り替えられます。
 
+通常の背景にはMP4動画も使えます。短い背景動画は繰り返し再生（初期値）、または最後のフレームで停止を選択できます。背景動画の音声は使わず、出力時間は音源に合わせます。スライドショーの各シーンは画像専用です。
+
 素材はサーバーに送信されず、処理は利用者のPC内で行います。プロジェクトJSONには素材本体を含まないため、再開時は素材をまとめて選択して再接続してください。プリセットはブラウザ・サイトごとに保存されます。ローカルと公開サイト間で移す場合はプリセットJSONを書き出して取り込みます。
 
 詳しい操作は **[詳細ユーザーガイド（全20章）](MANUAL.html)** を参照してください。初めての動画作成、各設定の意味、SRT・タイムシートの記入例、保存・再開、トラブル対処を説明しています。展開後の `MANUAL.html` は直接ダブルクリックで読めます。目次から移動でき、Ctrl＋Fで検索、Ctrl＋Pで印刷できます。日本語のガイドです。
@@ -44,5 +46,6 @@ This is one prebuilt package for both GitHub Pages and Windows local use.
 - **GitHub Pages:** Upload all extracted contents to the root of a publishing branch (for example `gh-pages`) in `<username>.github.io`. Select that branch and `/ (root)` in Settings → Pages → Deploy from a branch. Open the resulting HTTPS URL. Visitors need no Node.js. For an existing site, preserve its homepage and place the package in a subfolder such as `ssvc/` on its current publishing branch.
 - Keep `index.html`, `assets/`, `favicon.svg`, `licenses/`, `.nojekyll`, `scripts/` and `start-web.bat` together. Local launcher files can stay in the published repository. They are not executed by GitHub Pages.
 - Media stays on your device. Google Fonts require internet access; browser standard fonts work offline. Project JSON stores settings and media references, not the media itself. Re-select the media when reopening a project.
+- Ordinary backgrounds accept MP4 as well as images. Short videos loop by default, or hold their last frame. Video audio is ignored; the separate audio file determines output length. Slideshow scenes still accept images only.
 - `LICENSE` covers SSVC; `third-party-notices.txt` and `licenses/` contain dependency notices.
 - Open `MANUAL.html` for the detailed Japanese user guide, including step-by-step workflows, setting explanations and troubleshooting. It works offline and includes a print layout.
